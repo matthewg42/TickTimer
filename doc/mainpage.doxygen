@@ -1,0 +1,13 @@
+/**
+
+\mainpage TickTimer class for Arduino
+
+TickTimer objects allow future scheduling of callback functions to be set up in an Arduino program. 
+
+A TickTimer object is created with a function pointer to a void fn(void) which will be called when
+the timer expires.  Timers are set using the TickTimer::set(int ticks) member function, which takes 
+a number of ticks before the callback is called.   TickTimer::tick() is called periodically, which 
+will trigger the callback when the designated number of ticks have happened.
+
+@example ticktimer_example.ino
+*/
